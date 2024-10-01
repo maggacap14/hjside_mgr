@@ -9,7 +9,6 @@
 .portfolio-grid {
     display: flex;
     flex-wrap: wrap;
-	padding-bottom: 50px;
     gap: 10px; /* Spacing between images */
 }
 
