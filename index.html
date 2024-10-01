@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portefølje Magnus Grøtte Renå</title>
+    <link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/9cdcaa1f95.js" crossorigin="anonymous"></script>
+</head>
+
+<div class="topnav" id="myTopnav">
+	<a href="index.html" class="active">Hjem</a>
+	<a href="Grafiske prosjekter.html">Grafiske prosjekter</a>
+	<a href="Videoer.html">Videoer</a>
+	<a href="Hobbyer.html">Hobbyer</a>
+	<a href="javascript:void(0);" 
+		class="icon" 
+		onclick="myFunction2()">
+			<i class="fa fa-bars"></i>
+	</a>
+</div>
+	
+  <body>
+	 <div>
+	 	<img id="cvbilde" src="Bilde/CV_bilde.jpeg" alt="Magnus Grøtte Renå"> 
+	 </div> 
+      
+    
+	<div class="overskrift">
+		<h1>Magnus Grøtte Renå</h1>
+		<h1>28 år</h1>
+		<h1>Økonom</h1>
+		<h1>Mediegrafiker</h1>
+		<a href="https://www.threads.net/@magnus.renaa" class="fa-brands fa-threads"></a>
+		<a href="https://www.instagram.com/magnus.renaa/" class="fa-brands fa-instagram"></a>
+		<a href="https://www.linkedin.com/in/magnusrenaa" class="fa-brands fa-linkedin"></a>
+	</div>	
+
+	<div>
+		<h2>Min kompetanse</h2>
+        <ul>
+          <li>Kommunikasjon, informasjonsmateriell og videoer</li>
+          <li>Journalistikk</li>
+		  <li>Koding</li>
+          <li>Bachelor innen økonomi og administrasjon (2018)</li>
+        </ul>
+
+	    <h2>Egenskaper</h2>
+        <ul>
+          <li>Humor</li>
+          <li>Høy arbeidsvilje</li>
+		  <li>Strukturert</li>
+          <li>Øye for detaljer</li>
+        </ul>
+
+		<h2>Programmer jeg kan</h2>
+        <ul>
+          <li>Adobe InDesign</li>
+          <li>Adobe Illustrator</li>
+		  <li>Adobe Photoshop</li>
+          <li>Adobe Premiere</li>
+		  <li>Adobe After Effects</li>
+          <li>Adobe Animate</li>
+		  <li>Adobe Dimension</li>
+        </ul>
+	</div>
+
+	<script>
+		function myFunction2() {
+		  var x = document.getElementById("myTopnav");
+		  if (x.className === "topnav") {
+			x.className += " responsive";
+		  } else {
+			x.className = "topnav";
+		  }
+		}
+	</script>
+
+	<script>
+		window.onscroll = function() {myFunction()};
+		
+		var navbar = document.getElementById("myTopnav");
+		var sticky = navbar.offsetTop;
+		
+		function myFunction() {
+		  if (window.pageYOffset >= sticky) {
+			navbar.classList.add("sticky")
+		  } else {
+			navbar.classList.remove("sticky");
+		  }
+		}
+	</script>
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Til toppen</button>
+
+	<script>
+	// Get the button:
+	let mybutton = document.getElementById("myBtn");
+
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+  	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+   	 mybutton.style.display = "block";
+  	} else {
+    	mybutton.style.display = "none";
+  	}
+}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+  	document.body.scrollTop = 0; // For Safari
+  	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+	</script>
+
+	</body>	
+	<footer id="kontakt">
+        <div class="container">
+            <h2>Kontakt</h2>
+            <p>Du kan kontakte meg på <a href="magnusrenaa@gmail.com">magnusrenaa@gmail.com</a></p>
+        </div>
+    </footer>
+</html>

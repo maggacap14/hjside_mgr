@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Videoer</title>
+	<link href="Videoer.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<div class="topnav" id="myTopnav">
+	<a href="index.html">Hjem</a>
+	<a href="Grafiske prosjekter.html">Grafiske prosjekter</a>
+	<a href="Videoer.html" class="active">Videoer</a>
+	<a href="Hobbyer.html">Hobbyer</a>
+	<a href="javascript:void(0);" 
+		class="icon" 
+		onclick="myFunction2()"> 
+			<i class="fa fa-bars"></i>
+	</a>
+</div>
+	
+<body>
+	<h1 class="vid">Videoer</h1>
+	<h3>Her er videoer som jeg har laget.</h3>
+<div>
+	<h2>eLås</h2>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/gjHYm-c8ewg?si=vVvsNVqVlbrjKr3D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+	<h2>eLås - Engelsk</h2>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/djo4p3jxlE8?si=jrJ0l435Fpb0_s49" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+	<h2>eLås - Spansk</h2>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/gfvY99wUWa4?si=n3Y01bnG3LknNdwQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+	<h2>Livsglede</h2>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/0Ad_gKS9VLA?si=BadOL5rB9hWPJGCl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+	<h2>Trygghetsalarm</h2>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/Cn5rc6xNEVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	
+	<h2>Elektronisk medisindispenser</h2>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/AjTFhQEXdCc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+	<footer id="kontakt">
+		<div class="container">
+			<h2>Kontakt</h2>
+			<p>Du kan kontakte meg på <a href="magnusrenaa@gmail.com">magnusrenaa@gmail.com</a></p>
+		</div>
+	</footer>
+
+	<script>
+		function myFunction2() {
+	  	var x = document.getElementById("myTopnav");
+	  	if (x.className === "topnav") {
+			x.className += " responsive";
+	  	} else {
+			x.className = "topnav";
+	  	}
+		}
+	</script>
+
+	<script>
+		window.onscroll = function() {myFunction()};
+		
+		var navbar = document.getElementById("myTopnav");
+		var sticky = navbar.offsetTop;
+		
+		function myFunction() {
+		  if (window.pageYOffset >= sticky) {
+			navbar.classList.add("sticky")
+		  } else {
+			navbar.classList.remove("sticky");
+		  }
+		}
+	</script>
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Til toppen</button>
+
+	<script>
+		// Get the button:
+		let mybutton = document.getElementById("myBtn");
+	
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+	
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			mybutton.style.display = "block";
+		  } else {
+			mybutton.style.display = "none";
+		  }
+	}
+	
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0; // For Safari
+		  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+	}
+		</script>
+</body>
+</html>
