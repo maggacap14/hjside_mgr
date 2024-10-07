@@ -103,7 +103,7 @@ h4 {
 	.Sport {
 		font-size: 40px;
 		}
-	.FilmS {
+	.Films {
 		font-size: 40px;
 		}
 
@@ -113,6 +113,7 @@ h4 {
 		max-width: 100%;
 		margin-bottom: 50px;
 		margin-top: 5px;
+		border: 2px solid #ccc;
 		}
 
 	.Ronaldinho {
@@ -120,6 +121,7 @@ h4 {
 		max-width: 100%;
 		margin-bottom: 50px;
 		margin-top: 5px;
+		border: 2px solid #ccc;
 		}
 
 	.Bolt {
@@ -127,28 +129,36 @@ h4 {
 		max-width: 100%;
 		margin-bottom: 50px;
 		margin-top: 5px;
+		border: 2px solid #ccc;
 		}
-
+	
 	div.gallery {
-		margin: 5px;
-		border: 1px solid #ccc;
 		float: left;
-		width: 160px;
+		width: 180px;
+		display: flex;             /* Use Flexbox for centering */
+    	justify-content: center;   /* Center images horizontally */
+    	align-items: center;       /* Center images vertically */
+    	flex-wrap: wrap;           /* Allow wrapping for multiple images */
+    	margin: 10px;
+		border: 2px solid #ccc; /* Optional: Add a border for visibility */
+    	overflow: hidden; /* Prevent content overflow */
+		object-fit: cover; /* Crop images to fit within boundaries */
 		}
 		  
 	div.gallery:hover {
-		border: 1px solid #777;
+		border: 2px solid #777;
 		}
 		  
 	div.gallery img {
-		max-width: 100%;
-		max-height: fit-content;
-		height: auto;
+		max-width: 100%;           /* Ensure images are responsive */
+    	max-height: 300px;         /* Set a max height for consistency */
+    	object-fit: cover;         /* Crop images to fit within boundaries */
 		}
 		  
 	div.desc {
 		padding: 15px;
-		text-align: center;
+		text-align: center;        /* Center text description */
+    	margin-top: 5px;
 		}
 	
 	.clearfix:after {
