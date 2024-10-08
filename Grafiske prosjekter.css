@@ -10,6 +10,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px; /* Spacing between images */
+	margin-bottom: 60px;
 }
 
 .portfolio-item {
@@ -31,6 +32,7 @@
 .image-row img {
     width: 24%; /* Adjust this to control the number of images per row */
     height: auto;
+	margin-bottom: 20px;
 }
 
 .portfolio-item {
@@ -144,14 +146,8 @@ h3 {
 p {
 		font-family: Arial, Helvetica, sans-serif;
 		text-rendering: optimizeLegibility;
+		margin-bottom: 40px;
 		}
-	
-	.gp {
-        font-family: Arial, Helvetica, sans-serif;
-		text-rendering: optimizeLegibility;
-		text-align: center;
-		text-transform: uppercase;
-	}
 
 	#myBtn {
 		display: none; /* Hidden by default */

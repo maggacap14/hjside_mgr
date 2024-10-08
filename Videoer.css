@@ -101,28 +101,7 @@ h3 {
         font-family: Arial, Helvetica, sans-serif;
 		text-rendering: optimizeLegibility;
     	}
-	
-    ul{
-		font-family: Arial, Helvetica, sans-serif;
-		text-rendering: optimizeLegibility;
-		list-style-type: none;
-		padding-bottom: 80px;
-		}
 
-	ul li {
-		font-family: Arial, Helvetica, sans-serif;
-		text-rendering: optimizeLegibility;
-		display: block;
-		padding: 0.4rem;
-		text-align: center;
-		}
-	
-	.vid {
-        font-family: Arial, Helvetica, sans-serif;
-		text-rendering: optimizeLegibility;
-		text-align: center;
-		text-transform: uppercase;
-    	}
 
 		#myBtn {
 			display: none; /* Hidden by default */
@@ -147,6 +126,7 @@ h3 {
 	/* Footer */
 	footer {
     background: #4F92FF;
+	margin-top: 60px;
     color: #0D1420;
     text-align: center;
     padding: 20px 0;
