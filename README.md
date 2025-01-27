@@ -1,2 +1,2 @@
-# hjside_mgr
-Hjemmeside
+# Portefoelje_MGR
+Portefølje Magnus Grøtte Renå

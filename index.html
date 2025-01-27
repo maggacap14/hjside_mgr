@@ -32,7 +32,6 @@
 		<h1 id="age"></h1>
 		<h1>Økonom</h1>
 		<h1>Mediegrafiker</h1>
-		<a href="https://www.threads.net/@magnus.renaa" class="fa-brands fa-threads"></a>
 		<a href="https://www.instagram.com/magnus.renaa/" class="fa-brands fa-instagram"></a>
 		<a href="https://www.linkedin.com/in/magnusrenaa" class="fa-brands fa-linkedin"></a>
 	</div>	
@@ -93,44 +92,44 @@
 	</script>
 
 	<script>
- 	function calculateAge(birthDate) {
-    	const today = new Date();
-    	const birth = new Date(birthDate);
-    	let age = today.getFullYear() - birth.getFullYear();
+		function calculateAge(birthDate) {
+	  	const today = new Date();
+	  	const birth = new Date(birthDate);
+	  	let age = today.getFullYear() - birth.getFullYear();
+  
+	  	const monthDifference = today.getMonth() - birth.getMonth();
+	  		if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birth.getDate())) {
+			age--;
+	  	}
+	  	return age;
+	}
+  
+	document.getElementById("age").innerHTML = calculateAge("1996-07-19") + " år";
+  </script>
 
-    	const monthDifference = today.getMonth() - birth.getMonth();
-    	if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birth.getDate())) {
-     	age--;
-    	}
-   	 return age;
-  	}
+<button onclick="topFunction()" id="myBtn" title="Go to top">Til toppen</button>
 
-  	document.getElementById("age").innerHTML = calculateAge("1996-07-19") + " år";
-	</script>
-
-	<button onclick="topFunction()" id="myBtn" title="Go to top">Til toppen</button>
-
-	<script>
-	// Get the button:
-	let mybutton = document.getElementById("myBtn");
-
-	// When the user scrolls down 20px from the top of the document, show the button
-	window.onscroll = function() {scrollFunction()};
-
-	function scrollFunction() {
-  	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-   	 mybutton.style.display = "block";
-  	} else {
-    	mybutton.style.display = "none";
-  	}
-}
-
-	// When the user clicks on the button, scroll to the top of the document
-	function topFunction() {
-  	document.body.scrollTop = 0; // For Safari
-  	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-	</script>
+    <script>
+        // Get the button:
+        let mybutton = document.getElementById("myBtn");
+    
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+    
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+    }
+    
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0; // For Safari
+          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+        </script>
 
 	</body>	
 	<footer id="kontakt">

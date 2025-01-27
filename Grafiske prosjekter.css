@@ -132,6 +132,11 @@ body {
 	   background-color: ghostwhite;
 	}
 
+h1 {
+		font-family: Arial, Helvetica, sans-serif;
+		text-rendering: optimizeLegibility;
+    	}
+
 h2 {
 		font-family: Arial, Helvetica, sans-serif;
 		text-rendering: optimizeLegibility;
@@ -146,8 +151,15 @@ h3 {
 p {
 		font-family: Arial, Helvetica, sans-serif;
 		text-rendering: optimizeLegibility;
-		margin-bottom: 40px;
+		margin-bottom: 20px;
 		}
+
+.grafisk {
+	font-family: Arial, Helvetica, sans-serif;
+	text-rendering: optimizeLegibility;
+	margin-bottom: 120px;
+	}
+
 
 	#myBtn {
 		display: none; /* Hidden by default */
