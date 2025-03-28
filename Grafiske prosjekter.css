@@ -51,8 +51,11 @@
 footer {
     background: #4F92FF;
     color: #0D1420;
+	text-decoration:underline;
+	text-decoration-color: ghostwhite;
     text-align: center;
     padding: 20px 0;
+	margin-top: 60px;
 }
 
 footer a {
@@ -141,6 +144,9 @@ h2 {
 		font-family: Arial, Helvetica, sans-serif;
 		text-rendering: optimizeLegibility;
 		text-align: center;
+		text-decoration:underline;
+		text-decoration-color: #659EFC;
+		padding: 5px;
     	}
 	
 h3 {
