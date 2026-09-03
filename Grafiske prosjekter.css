@@ -9,8 +9,8 @@
 .portfolio-grid {
     display: flex;
     flex-wrap: wrap;
+	padding-bottom: 50px;
     gap: 10px; /* Spacing between images */
-	margin-bottom: 60px;
 }
 
 .portfolio-item {
@@ -32,7 +32,6 @@
 .image-row img {
     width: 24%; /* Adjust this to control the number of images per row */
     height: auto;
-	margin-bottom: 20px;
 }
 
 .portfolio-item {
@@ -53,7 +52,6 @@ footer {
     color: #0D1420;
     text-align: center;
     padding: 20px 0;
-	margin-top: 60px;
 }
 
 footer a {
@@ -95,7 +93,22 @@ footer a {
 	display: none;
 }
 
-@media screen and (max-width: 600px) {
+ /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+  
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+	padding-top: 60px;
+}
+
+body {
+	   background-color: ghostwhite;
+
+	   @media screen and (max-width: 600px) {
 	.topnav a:not(:first-child) {display: none;}
 	.topnav a.icon {
 	  float: right;
@@ -116,22 +129,7 @@ footer a {
 	  text-align: left;
 	}
 }
-
- /* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-	position: fixed;
-	top: 0;
-	width: 100%;
 }
-  
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-	padding-top: 60px;
-}
-
-body {
-	   background-color: ghostwhite;
-	}
 
 h1 {
 		font-family: Arial, Helvetica, sans-serif;
@@ -192,9 +190,14 @@ footer {
     color: #0D1420;
     text-align: center;
     padding: 20px 0;
+	display: block;
+	margin: 0 auto;
+	float: left;
+	min-width: 100%;
 }
 
 footer a {
     color: #ffffff;
     text-decoration: none;
 }
+
